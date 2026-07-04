@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button";
+
 export default function Hero() {
   return (
     <section
@@ -43,13 +45,13 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
 
-            <button className="bg-yellow-500 text-black font-bold px-8 py-4 rounded-full hover:scale-105 transition duration-300">
+            <Button>
               Browse Properties
-            </button>
+            </Button>
 
-            <button className="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition duration-300">
-              Schedule Viewing
-            </button>
+            <Button variant="secondary">
+               Schedule Viewing
+            </Button>
 
           </div>
 
