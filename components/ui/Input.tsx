@@ -1,4 +1,5 @@
 import { InputHTMLAttributes } from "react";
+import clsx from "clsx";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   icon?: React.ReactNode;
@@ -6,7 +7,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 export default function Input({
   icon,
-  className = "",
+  className,
   ...props
 }: InputProps) {
   return (
@@ -20,7 +21,10 @@ export default function Input({
 
       <input
         {...props}
-        className={`bg-transparent w-full py-4 outline-none placeholder:text-zinc-500 ${className}`}
+        className={clsx(
+          "bg-transparent w-full py-4 outline-none placeholder:text-zinc-500",
+          className
+        )}
       />
 
     </div>

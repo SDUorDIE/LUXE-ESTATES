@@ -12,11 +12,12 @@ import { Property } from "@/types/property";
 import Button from "./Button";
 
 interface PropertyCardProps {
-  property: Property;
+    property: Property;
+    onClick: () => void;
 }
-
 export default function PropertyCard({
   property,
+  onClick,
 }: PropertyCardProps) {
   return (
     <div className="group bg-zinc-950 rounded-3xl overflow-hidden border border-zinc-800 hover:border-yellow-500 transition-all duration-300 hover:-translate-y-3">
@@ -92,13 +93,13 @@ export default function PropertyCard({
 
         </div>
 
-        <Button className="mt-8 w-full">
-
-          View Property
-
-          <ArrowRight size={18} />
-
-        </Button>
+        <Button
+            className="mt-8 w-full"
+            onClick={onClick}
+        >
+            View Property
+            <ArrowRight size={18} />
+         </Button>
 
       </div>
 

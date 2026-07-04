@@ -20,6 +20,7 @@ export default function FeaturedProperties() {
           <PropertyCard
             key={property.id}
             property={property}
+            onClick={() => {}}
           />
 
         ))}

@@ -12,10 +12,8 @@ export const properties: Property[] = [
     size: 650,
     image: "/images/properties/property1.jpg",
     featured: true,
-    description:
-      "Modern luxury villa overlooking the Atlantic Ocean with panoramic views.",
+    description: "Modern villa overlooking the Atlantic Ocean.",
   },
-
   {
     id: 2,
     title: "Luxury Penthouse",
@@ -27,10 +25,8 @@ export const properties: Property[] = [
     size: 420,
     image: "/images/properties/property2.jpg",
     featured: true,
-    description:
-      "Exclusive penthouse located in the heart of Sandton.",
+    description: "Exclusive penthouse in Sandton.",
   },
-
   {
     id: 3,
     title: "Winelands Estate",
@@ -42,7 +38,32 @@ export const properties: Property[] = [
     size: 900,
     image: "/images/properties/property3.jpg",
     featured: false,
-    description:
-      "Private estate surrounded by vineyards and breathtaking mountain views.",
+    description: "Luxury estate surrounded by vineyards.",
+  },
+  {
+    id: 4,
+    title: "Beach House",
+    location: "Durban",
+    price: 18500000,
+    bedrooms: 4,
+    bathrooms: 3,
+    garages: 2,
+    size: 500,
+    image: "/images/properties/property4.jpg",
+    featured: false,
+    description: "Beautiful beachfront home.",
+  },
+  {
+    id: 5,
+    title: "Mountain Retreat",
+    location: "Knysna",
+    price: 22000000,
+    bedrooms: 5,
+    bathrooms: 4,
+    garages: 3,
+    size: 700,
+    image: "/images/properties/property5.jpg",
+    featured: true,
+    description: "Private retreat with panoramic mountain views.",
   },
 ];
