@@ -11,7 +11,7 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
-        {/* Logo */}
+        //logo 
 
         <a
           href="#"
@@ -20,7 +20,7 @@ export default function Navbar() {
           LUXE
         </a>
 
-        {/* Desktop Navigation */}
+       //Desktop Navigation
 
         <div className="hidden md:flex items-center gap-10">
 
@@ -46,7 +46,7 @@ export default function Navbar() {
 
         </div>
 
-        {/* Mobile Button */}
+      //Mobile Button
 
         <button
           className="md:hidden"
@@ -57,7 +57,7 @@ export default function Navbar() {
 
       </div>
 
-      {/* Mobile Menu */}
+      //Mobile Menu
 
       {menuOpen && (
         <div className="md:hidden bg-black border-t border-zinc-800">
