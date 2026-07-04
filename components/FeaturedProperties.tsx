@@ -9,20 +9,23 @@ export default function FeaturedProperties() {
       className="py-32 px-6 max-w-7xl mx-auto"
     >
       <SectionTitle
-        subtitle="Luxury Collection"
+        subtitle="Exclusive Collection"
         title="Featured Properties"
       />
 
       <div className="grid md:grid-cols-3 gap-8">
 
         {properties.map((property) => (
+
           <PropertyCard
             key={property.id}
             property={property}
           />
+
         ))}
 
       </div>
+
     </section>
   );
 }
