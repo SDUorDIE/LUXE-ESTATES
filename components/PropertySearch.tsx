@@ -2,6 +2,7 @@
 
 import { Search, MapPin, BedDouble, DollarSign } from "lucide-react";
 import Button from "./ui/Button";
+import Input from "./ui/Input";
 
 export default function PropertySearch() {
   return (
@@ -13,7 +14,7 @@ export default function PropertySearch() {
 
           <div className="grid lg:grid-cols-4 gap-6">
 
-            {/* Location */}
+            //Location
 
             <div>
 
@@ -21,21 +22,13 @@ export default function PropertySearch() {
                 Location
               </label>
 
-              <div className="flex items-center bg-zinc-900 rounded-xl px-4">
-
-                <MapPin className="text-yellow-500" size={20} />
-
-                <input
-                  type="text"
-                  placeholder="Cape Town"
-                  className="bg-transparent p-4 w-full outline-none"
-                />
-
-              </div>
-
+              <Input
+                placeholder="Cape Town"
+                icon={<MapPin size={20} />}
+               />
             </div>
 
-            {/* Bedrooms */}
+            //Bedrooms
 
             <div>
 
@@ -43,21 +36,15 @@ export default function PropertySearch() {
                 Bedrooms
               </label>
 
-              <div className="flex items-center bg-zinc-900 rounded-xl px-4">
-
-                <BedDouble className="text-yellow-500" size={20} />
-
-                <input
-                  type="number"
-                  placeholder="4"
-                  className="bg-transparent p-4 w-full outline-none"
-                />
-
-              </div>
+              <Input
+                type="number"
+                placeholder="4"
+                icon={<BedDouble size={20} />}
+               />
 
             </div>
 
-            {/* Budget */}
+            //Budget
 
             <div>
 
@@ -65,17 +52,10 @@ export default function PropertySearch() {
                 Budget
               </label>
 
-              <div className="flex items-center bg-zinc-900 rounded-xl px-4">
-
-                <DollarSign className="text-yellow-500" size={20} />
-
-                <input
-                  type="text"
-                  placeholder="R25M"
-                  className="bg-transparent p-4 w-full outline-none"
-                />
-
-              </div>
+              <Input
+                placeholder="R25M"
+                icon={<DollarSign size={20} />}
+              />
 
             </div>
 
