@@ -41,13 +41,9 @@ export default function Home() {
 
       <Stats />
 
-      <Agents />
-
       <Testimonials />
 
       <MortgageCalculator />
-
-      <Contact />
 
       <Footer />
 
