@@ -14,10 +14,10 @@ export default function PropertySearch({
   setSearch,
 }: PropertySearchProps) {
   return (
-    <section className="-mt-20 relative z-20 px-6">
+    <section className="relative z-20 px-6 py-24 bg-black">
       <div className="max-w-6xl mx-auto">
 
-        <div className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 shadow-2xl">
+        <div className="bg-zinc-900/80 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl">
 
           <div className="grid lg:grid-cols-4 gap-6">
 

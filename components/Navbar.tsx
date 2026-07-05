@@ -2,43 +2,56 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/70 border-b border-white/10">
 
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
         
 
-        <a
-          href="#"
+        <Link
+          href="/"
           className="text-3xl font-black tracking-[0.25em] text-white"
         >
           LUXE
-        </a>
+        </Link>
 
        
 
         <div className="hidden md:flex items-center gap-10">
 
-          <a href="#properties" className="hover:text-yellow-400 transition">
+          <Link
+            href="/properties"
+            className="hover:text-yellow-400 transition"
+          >
             Properties
-          </a>
+          </Link>
 
-          <a href="#agents" className="hover:text-yellow-400 transition">
+          <Link
+            href="/agents"
+            className="hover:text-yellow-400 transition"
+          >
             Agents
-          </a>
+          </Link>
 
-          <a href="#about" className="hover:text-yellow-400 transition">
+          <Link
+            href="/about"
+            className="hover:text-yellow-400 transition"
+          >
             About
-          </a>
+          </Link>
 
-          <a href="#contact" className="hover:text-yellow-400 transition">
+          <Link
+            href="/contact"
+            className="hover:text-yellow-400 transition"
+          >
             Contact
-          </a>
+          </Link>
 
           
 
@@ -66,13 +79,13 @@ export default function Navbar() {
 
           <div className="flex flex-col p-6 gap-6">
 
-            <a href="#properties">Properties</a>
+            <Link href="/properties">Properties</Link>
 
-            <a href="#agents">Agents</a>
+            <Link href="/agents">Agents</Link>
 
-            <a href="#about">About</a>
+            <Link href="/about">About</Link>
 
-            <a href="#contact">Contact</a>
+            <Link href="/contact">Contact</Link>
 
           </div>
 

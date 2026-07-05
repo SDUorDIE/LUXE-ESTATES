@@ -43,13 +43,17 @@ export default function Hero() {
 
          <div className="flex flex-col sm:flex-row gap-5 mt-10">
 
-               <Button>
+               <a href="/properties">
+                <Button>
                   Browse Properties
-               </Button>
+                </Button>
+               </a>
 
-               <Button variant="secondary">
+               <a href="/contact">
+                <Button variant="secondary">
                   Schedule Viewing
-               </Button>
+                </Button>
+               </a>
 
           </div>
 

@@ -12,7 +12,7 @@ export const properties: Property[] = [
     size: 650,
     image: "/images/properties/beachfront-villa.jpg",
     featured: true,
-    description: "Modern villa overlooking the Atlantic Ocean.",
+    description: "An extraordinary oceanfront villa offering uninterrupted Atlantic views, designer interiors, expansive entertainment spaces, and world-class finishes throughout.",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const properties: Property[] = [
     size: 420,
     image: "/images/properties/luxury-penthouse.jpg",
     featured: true,
-    description: "Exclusive penthouse in Sandton.",
+    description: "A sophisticated penthouse in the heart of Sandton featuring floor-to-ceiling glass, private terraces, smart home technology, and breathtaking skyline views.",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const properties: Property[] = [
     size: 900,
     image: "/images/properties/winelands-estate.jpg",
     featured: false,
-    description: "Luxury estate surrounded by vineyards.",
+    description: "Nestled among the vineyards of Stellenbosch, this magnificent estate combines timeless architecture with modern luxury and panoramic mountain scenery.",
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ export const properties: Property[] = [
     size: 500,
     image: "/images/properties/beach-house.jpg",
     featured: false,
-    description: "Beautiful beachfront home.",
+    description:   "A stunning beachfront residence in Durban offering direct beach access, spacious open-plan living, and spectacular Indian Ocean sunsets.",
   },
   {
     id: 5,
@@ -64,6 +64,6 @@ export const properties: Property[] = [
     size: 700,
     image: "/images/properties/modern-estate.jpg",
     featured: true,
-    description: "Private retreat with panoramic mountain views.",
+    description:  "Escape to this luxurious mountain sanctuary surrounded by indigenous forests, panoramic views, and absolute privacy in the heart of nature.",
   },
 ];

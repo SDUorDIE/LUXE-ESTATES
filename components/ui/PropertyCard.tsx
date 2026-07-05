@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   BedDouble,
   Bath,
@@ -12,12 +13,10 @@ import { Property } from "@/types/property";
 import Button from "./Button";
 
 interface PropertyCardProps {
-    property: Property;
-    onClick: () => void;
+  property: Property;
 }
 export default function PropertyCard({
   property,
-  onClick,
 }: PropertyCardProps) {
   return (
     <div className="group bg-zinc-950 rounded-3xl overflow-hidden border border-zinc-800 hover:border-yellow-500 transition-all duration-300 hover:-translate-y-3">
@@ -93,13 +92,17 @@ export default function PropertyCard({
 
         </div>
 
-        <Button
-            className="mt-8 w-full"
-            onClick={onClick}
-        >
-            View Property
-            <ArrowRight size={18} />
+        <Link href={`/properties/${property.id}`}>
+
+          <Button className="mt-8 w-full">
+
+            View Details
+
+          <ArrowRight size={18} />
+
          </Button>
+
+         </Link>
 
       </div>
 

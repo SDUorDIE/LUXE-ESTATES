@@ -12,7 +12,7 @@ export default function FeaturedProperties({
   return (
     <section
       id="properties"
-      className="py-32 px-6 max-w-7xl mx-auto"
+      className="py-24 px-6 max-w-7xl mx-auto"
     >
       <SectionTitle
         subtitle="Exclusive Collection"
@@ -37,7 +37,6 @@ export default function FeaturedProperties({
             <PropertyCard
               key={property.id}
               property={property}
-              onClick={() => {}}
              />
             ))}
           </div>

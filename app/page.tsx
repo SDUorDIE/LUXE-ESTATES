@@ -28,8 +28,6 @@ export default function Home() {
 
       <Hero />
 
-      <Stats />
-
       <PropertySearch
         search={search}
         setSearch={setSearch}
@@ -40,6 +38,8 @@ export default function Home() {
       />
 
       <WhyChooseUs />
+
+      <Stats />
 
       <Agents />
 
