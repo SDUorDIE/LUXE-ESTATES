@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageHeader from "@/components/PageHeader";
 
 
 export default function AboutPage() {
@@ -12,33 +13,12 @@ export default function AboutPage() {
 
       {/* Hero */}
 
-      <section className="relative h-[70vh] flex items-center">
-
-        <Image
-          src="/images/properties/hero-mansion.jpg"
-          alt="Luxury Estate"
-          fill
-          priority
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-
-          <p className="uppercase tracking-[0.4em] text-yellow-500 mb-4">
-            About LUXE
-          </p>
-
-          <h1 className="text-6xl md:text-7xl font-black">
-            Luxury Living.
-            <br />
-            Exceptional Service.
-          </h1>
-
-        </div>
-
-      </section>
+     <PageHeader
+       image="/images/header/about-header.jpg"
+       subtitle="About LUXE"
+       title="Luxury Living. Exceptional Service."
+       description="Discover the story behind South Africa's premier luxury real estate company."
+     />
 
       {/* Story */}
 
